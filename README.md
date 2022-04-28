@@ -1,43 +1,37 @@
-Git командууд :octocat:
-Git командуудын тайлбаруудыг харах туслажийн репо. Git documentation эндээс хараарай
+@@ -15,9 +15,37 @@ Git командуудын тайлбаруудыг харах туслажий
 
-Git командуудын жагсаалт
-git add * Бүх шинэ болон өөрчлөгдсөн файлууд болон хавтасуудыг stage-рүү хийнэ.
+`git branch -r` **Remote репо дээр байгаа бүх салбаруудыг харах**
 
-git add . Бүх шинэ болон өөрчлөгдсөн файлууд болон хавтасуудыг stage-рүү хийнэ.
+`git branch -vv` **Tracking салбаруудын талаар мэдээлэл харуулна.**
 
-git add -A Бүх шинэ болон өөрчлөгдсөн файлууд болон хавтасуудыг stage-рүү хийнэ.
+`git clone <repo>` **</repo> дээр байрласан репог дотоод машин руу хуулах. Оргинал репо нь дотоод файлын систем эсвэл HTTP юмуу SSH -ээр remote машин дээр байрлаж болно.**
 
-git add [file_name] file_name нэртэй файлыг stage-рүү хийнэ.
+`git config --global core.editor nano` **Git текст эдитероор nano-г сонгох**
 
-git branch -a Remote болон дотоод репо дээр байгаа бүх салбаруудыг харах
+`git cat-file -p [HASH]` **[HASH]-тай файлы агуулгыг харах**
 
-git branch -r Remote репо дээр байгаа бүх салбаруудыг харах
+`git branch -d [branch_name]` **[branch_name]-нэртэй салбарыг устгах**
 
-git branch -vv Tracking салбаруудын талаар мэдээлэл харуулна.
+`git branch -D [branch_name]` **[branch_name]-нэртэй салбарыг хүчээр шууд устгах**
 
-git clone <repo> дээр байрласан репог дотоод машин руу хуулах. Оргинал репо нь дотоод файлын систем эсвэл HTTP юмуу SSH -ээр remote машин дээр байрлаж болно.
+`git init` **Хоосон git репо үүсгэх**
 
-git config --global core.editor nano Git текст эдитероор nano-г сонгох
+`git log --oneline --graph` **Бүх коммитуудыг графикаар харах**
 
-git cat-file -p [HASH] [HASH]-тай файлы агуулгыг харах
+`git ls-files -s` **Stage area-д байгаа файлуудыг харах**
 
-git branch -d [branch_name] [branch_name]-нэртэй салбарыг устгах
+`git remote prune [remote_name]` **Local дээрээс [remote_name] репог цэвэрлэнэ.**
 
-git branch -D [branch_name] [branch_name]-нэртэй салбарыг хүчээр шууд устгах
+`git remote -v` **Default remote репог харах**
 
-git init Хоосон git репо үүсгэх
+`git remote show origin` **Origin remote репогийн талаар илүү дэлгэрэнгүй харах**
 
-git log --oneline --graph Бүх коммитуудыг графикаар харах
+`git status` **Git төлөвийг харах**
 
-git ls-files -s Stage area-д байгаа файлуудыг харах
+`git status -s` **Git төлөвийг илүү товчхоноор харах**
 
-git remote prune [remote_name] Local дээрээс [remote_name] репог цэвэрлэнэ.
 
-git remote -v Default remote репог харах
 
-git remote show origin Origin remote репогийн талаар илүү дэлгэрэнгүй харах
 
-git status Git төлөвийг харах
 
-git status -s Git төлөвийг илүү товчхоноор харах
+
