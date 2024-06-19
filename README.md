@@ -43,6 +43,7 @@ Git командуудын тайлбаруудыг харах туслажий�
 `git reset --hard HEAD~1` **Сүүлийн коммитийг буцаана гэхдээ ажлын хавтас болон stage area-г reset-лэнэ.**
 
 `git push origin +HEAD^:branch_name` **If you want to keep it in the local and want to delete it from the remote repository only then use the following command**
+`git reset HEAD^ git push origin +HEAD` **Сүүлийн коммитийг remote болон local репогоос устгах буюу коммитийг буцаах үйлдэл хийнэ.**
 
 
 
